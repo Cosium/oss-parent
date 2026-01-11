@@ -339,15 +339,6 @@
         </plugin>
 -->
 
-        <!-- 13-May-2025, tatu: Need to add this for new Central Portal
-            publishing
-          -->
-        <plugin>
-          <groupId>org.sonatype.central</groupId>
-          <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>${version.plugin.central-publishing}</version>
-        </plugin>
-
       </plugins>
     </pluginManagement>
 
@@ -485,18 +476,6 @@
         <version>${version.plugin.surefire}</version>
       </plugin>
 
-      <!-- 26-May-2025, tatu: Switch to Sonatype Central Portal;
-	    need new deploy plug-in
-	-->
-      <plugin>
-        <groupId>org.sonatype.central</groupId>
-        <artifactId>central-publishing-maven-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <deploymentName>Deployment-${project.artifactId}</deploymentName>
-          <publishingServerId>central</publishingServerId>
-        </configuration>
-      </plugin>
     </plugins>
 
     <extensions>
